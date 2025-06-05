@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee App</title>
+    <script src="script.js" defer></script>
+   
+<body onload="getEmployee()">
+    <h1>Employee APP</h1>
+    <h3>Add employee</h3>
+    <form onsubmit="addemployee(event)" id="addemployee">
+        <input type="number" placeholder="enter employee id" name="employeeid" value="">
+        <input type="text" placeholder="enter fullname" name="fullname" value="">
+        <button type="submit">Submit</button>    
+    </form>
+    
+    <h3>Edit Employee</h3>
+     <form onsubmit="editEmployee(event)" id="editEmployee">
+        <input type="number" placeholder="enter employee id" name="employeeid" value="">
+        <input type="text" placeholder="enter fullname" name="fullname" value="">
+        <button type="submit" >Submit</button>    
+    </form>
+
+    <table id="employee-table" >
+        <thead>
+            <td>id</td>
+            <td>Employee id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </thead>
+    </table>
+
+
+
+   
+</body>
+</html>
